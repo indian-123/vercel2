@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os.path
 from pathlib import Path
-import dj_database_url
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -83,12 +83,10 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'indian_Manju_*123',
-        'HOST':'db.jgovmaristfappnaklsx.supabase.co',
+        'HOST':'db.ccjzxpjguliwrnmqsaku.supabase.co',
         'PORT':'5432',
     }
 }
-
-DATABASES['default'] = dj_database_url.config()
 
 
 # Password validation
@@ -136,7 +134,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #static work
-import os
+
 
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
 STATIC_ROOT = os.path.join(BASE_DIR/ 'staticfiles_build'/ 'static')
